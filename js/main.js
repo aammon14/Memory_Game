@@ -1,8 +1,19 @@
-console.log("Up and running!");
+var cards = ["queen" , "king" , "queen" , "king"];
 
-var cardOne = "king";
-var cardTwo = "queen";
-var cardThree = "king";
-var cardFour = "queen";
+var cardsInPlay = [];
 
-console.log("User flipped " + cardOne);
+var cardOne = cards[0];
+
+cardsInPlay.push(cardOne);
+	console.log("User flipped a queen");
+
+var cardTwo = cards[1];
+
+cardsInPlay.push(cardTwo);
+	console.log("user flipped a king");
+
+if (cardsInPlay.length === 2 && cardsInPlay[0] === cardsInPlay[1]) {
+	alert("You found a match!")
+} else {
+	alert("Sorry, try again.")
+}
